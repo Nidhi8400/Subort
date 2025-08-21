@@ -10,7 +10,6 @@ print_status() { echo -e "[+] $1"; }
 print_success() { echo -e "[✓] $1"; }
 print_error() { echo -e "[!] $1"; }
 
-# HTML helpers
 start_html() {
     cat <<EOF >"$HTML_FILE"
 <!DOCTYPE html>
@@ -180,3 +179,4 @@ if [ -s "$IPS_FILE" ]; then
 fi
 
 print_success "Recon finished!"
+
